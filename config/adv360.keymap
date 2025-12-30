@@ -443,22 +443,32 @@
 
         jk_esc {
             bindings = <&kp ESC>;
-            key-positions = <40 41>;
+            key-positions = <41 42>;
         };
 
         df_tab {
             bindings = <&kp TAB>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
         };
 
         kl_lang1 {
             bindings = <&kp LANG1>;
-            key-positions = <41 42>;
+            key-positions = <42 43>;
         };
 
         sd_lang2 {
             bindings = <&kp LANG2>;
-            key-positions = <32 31>;
+            key-positions = <31 30>;
+        };
+
+        ui_hyper_f13 {
+            bindings = <&kp LC(LS(LA(LG(F13))))>;
+            key-positions = <23 24>;
+        };
+
+        er_hyper_f14 {
+            bindings = <&kp LC(LS(LA(LG(F14))))>;
+            key-positions = <18 17>;
         };
     };
 
