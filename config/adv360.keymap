@@ -504,16 +504,6 @@
             key-positions = <48 49>;
         };
 
-        sqt {
-            bindings = <&kp LC(LS(LA(LG(F13))))>;
-            key-positions = <23 24>;
-        };
-
-        hyper_f14 {
-            bindings = <&kp LC(LS(LA(LG(F14))))>;
-            key-positions = <18 17>;
-        };
-
         right_click {
             bindings = <&mkp RCLK>;
             key-positions = <42 43>;
@@ -536,11 +526,11 @@
         base_reverse {
             display-name = "Base_reverse";
             bindings = <
-&mm_ea     &mm_n1        &mm_n2       &mm_n3       &mm_n4        &mm_n5  &kp PSCRN                                                                &mo 9      &mm_n6  &mm_n7        &mm_n8           &mm_n9         &mm_n0           &kp BSLH
-&kp EQUAL  &kp Q         &kp W        &kp E        &kp R         &kp T   &kp INS                                                                  &kp DEL    &kp Y   &kp U         &kp I            &kp O          &kp P            &kp MINUS
-&kp GRAVE  &kp A         &kp S        &kp D        &kp F         &kp G   &none      &kp LCTRL  &kp LALT       &kp TAB                &kp ESC      &none      &kp H   &kp J         &kp K            &kp L          &kp SEMI         &kp SQT
-&sk LSHFT  &hml LSHFT Z  &hml LGUI X  &hml LALT C  &hml LCTRL V  &kp B                         &kp LGUI       &kp LS(LA(LG(LCTRL)))                          &kp N   &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LSHFT FSLH  &sk RSHFT
-&mo 8      &mm_pa        &kp LS(DEL)  &kp INS      &kp PSCRN             &kp BSPC   &sk LSHFT  &kp LANG2      &kp LANG1              &hm 6 ENTER  &kp SPACE          &kp LEFT      &kp DOWN         &kp UP         &kp RIGHT        &mo 8
+&mm_ea     &mm_n1        &mm_n2         &mm_n3       &mm_n4        &mm_n5  &kp PSCRN                                                                &mo 9      &mm_n6  &mm_n7        &mm_n8           &mm_n9         &mm_n0           &kp BSLH
+&kp EQUAL  &kp Q         &kp W          &kp E        &kp R         &kp T   &kp INS                                                                  &kp DEL    &kp Y   &kp U         &kp I            &kp O          &kp P            &kp MINUS
+&kp GRAVE  &kp A         &kp S          &kp D        &kp F         &kp G   &none      &kp LCTRL  &kp LALT       &kp TAB                &kp ESC      &none      &kp H   &kp J         &kp K            &kp L          &kp SEMI         &kp SQT
+&sk LSHFT  &hml LSHFT Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &kp B                         &kp LGUI       &kp LS(LA(LG(LCTRL)))                          &kp N   &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LSHFT FSLH  &sk RSHFT
+&mo 8      &kp PG_UP     &kp PAGE_DOWN  &kp LEFT     &kp RIGHT             &kp BSPC   &sk LSHFT  &kp LANG2      &kp LANG1              &hm 6 ENTER  &kp SPACE          &kp DOWN      &kp UP           &kp PRCNT      &kp AMPS         &mo 8
             >;
         };
 
@@ -558,11 +548,11 @@
         jis_reverse {
             display-name = "Jisa_reverse";
             bindings = <
-&mj_ea     &mj_n1        &mj_n2       &mj_n3       &mj_n4        &mj_n5  &kp PSCRN                                                                            &mo 9                  &mj_n6  &mj_n7        &mj_n8           &mj_n9         &mj_n0           &mj_bp
-&mj_ep     &kp Q         &kp W        &kp E        &kp R         &kp T   &kp INS                                                                              &kp DEL                &kp Y   &kp U         &kp I            &kp O          &kp P            &mj_mu
-&mj_gt     &kp A         &kp S        &kp D        &kp G         &kp G   &kp LS(LC(LG(LCTRL)))  &kp LCTRL  &kp LALT       &kp TAB                &kp ESC      &kp LS(LA(LG(LCTRL)))  &kp H   &kp J         &kp K            &kp L          &mj_sc           &mj_qd
-&sk LSHFT  &hml LSHFT Z  &hml LGUI X  &hml LALT C  &hml LCTRL V  &kp B                                     &kp LGUI       &kp LS(LA(LG(LCTRL)))                                      &kp N   &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LSHFT FSLH  &sk RSHFT
-&mo 8      &mj_pa        &kp DEL      &kp INS      &kp PSCRN             &kp BSPC               &kp LSHFT  &kp LANG2      &kp LANG1              &hm 7 ENTER  &kp SPACE                      &kp LEFT      &kp DOWN         &kp UP         &kp RIGHT        &mo 8
+&mj_ea     &mj_n1        &mj_n2         &mj_n3       &mj_n4        &mj_n5  &kp PSCRN                                                                            &mo 9                  &mj_n6  &mj_n7        &mj_n8           &mj_n9         &mj_n0           &mj_bp
+&mj_ep     &kp Q         &kp W          &kp E        &kp R         &kp T   &kp INS                                                                              &kp DEL                &kp Y   &kp U         &kp I            &kp O          &kp P            &mj_mu
+&mj_gt     &kp A         &kp S          &kp D        &kp G         &kp G   &kp LS(LC(LG(LCTRL)))  &kp LCTRL  &kp LALT       &kp TAB                &kp ESC      &kp LS(LA(LG(LCTRL)))  &kp H   &kp J         &kp K            &kp L          &mj_sc           &mj_qd
+&sk LSHFT  &hml LSHFT Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &kp B                                     &kp LGUI       &kp LS(LA(LG(LCTRL)))                                      &kp N   &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LSHFT FSLH  &sk RSHFT
+&mo 8      &kp PG_UP     &kp PAGE_DOWN  &kp LEFT     &kp RIGHT             &kp BSPC               &kp LSHFT  &kp LANG2      &kp LANG1              &hm 7 ENTER  &kp SPACE                      &kp DOWN      &kp UP           &kp PRCNT      &kp CARET        &mo 8
             >;
         };
 
@@ -603,25 +593,26 @@
 
         fn_num {
             bindings = <
-&none  &none     &none     &none      &none     &none   &none                                       &none   &none    &none    &none      &none    &none      &none
-&none  &kp F1    &kp F2    &kp F3     &kp F4    &kp F5  &none                                       &none   &kp F6   &kp F7   &kp F8     &kp F9   &kp F10    &none
-&none  &kp N1    &kp N2    &kp N3     &kp N4    &kp N5  &none   &trans  &trans      &trans  &trans  &none   &kp N6   &kp N7   &kp N8     &kp N9   &kp N0     &kp ENTER
-&none  &kp FSLH  &kp STAR  &kp MINUS  &kp PLUS  &none                   &trans      &trans                  &kp F11  &kp F12  &kp COMMA  &kp DOT  &kp SPACE  &none
-&none  &none     &none     &none      &none             &trans  &trans  &trans      &trans  &trans  &trans           &none    &none      &none    &none      &none
+&none  &kp F1     &kp F2  &kp F3  &kp F4  &kp F5     &none                                       &none   &kp F6    &kp F7   &kp F8     &kp F9   &kp F10        &kp F11
+&none  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp STAR   &none                                       &none   &none     &kp TAB  &none      &none    &kp PSCRN      &kp F12
+&none  &kp DOT    &kp N4  &kp N5  &kp N6  &kp MINUS  &none   &trans  &trans      &trans  &trans  &none   &kp BSPC  &kp RET  &kp SPACE  &kp DEL  &kp LA(PSCRN)  &kp LG(PSCRN)
+&none  &kp N0     &kp N1  &kp N2  &kp N3  &kp PLUS                   &trans      &trans                  &none     &none    &kp COMMA  &kp DOT  &kp FSLH       &none
+&none  &none      &none   &none   &none              &trans  &trans  &trans      &trans  &trans  &trans            &none    &none      &none    &none          &none
             >;
 
             label = "Fn_Num";
         };
 
         fn_num_jis {
-            label = "Fn_Num_(is";
             bindings = <
-&none  &none     &none    &none      &none         &none   &none                                       &none   &none    &none    &none      &none    &none      &none
-&none  &kp F1    &kp F2   &kp F3     &kp F4        &kp F5  &none                                       &none   &kp F6   &kp F7   &kp F8     &kp F9   &kp F10    &none
-&none  &kp N1    &kp N2   &kp N3     &kp N4        &kp N5  &none   &trans  &trans      &trans  &trans  &none   &kp N6   &kp N7   &kp N8     &kp N9   &kp N0     &kp ENTER
-&none  &kp FSLH  &kp DQT  &kp MINUS  &kp LS(SEMI)  &none                   &trans      &trans                  &kp F11  &kp F12  &kp COMMA  &kp DOT  &kp SPACE  &none
-&none  &none     &none    &none      &none                 &trans  &trans  &trans      &trans  &trans  &trans           &none    &none      &none    &none      &none
+&none  &kp F1     &kp F2  &kp F3  &kp F4  &kp F5        &none                                       &none   &kp F6    &kp F7   &kp F8     &kp F9   &kp F10        &kp F11
+&none  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp DQT       &none                                       &none   &none     &kp TAB  &none      &none    &kp PSCRN      &kp F12
+&none  &kp DOT    &kp N4  &kp N5  &kp N6  &kp MINUS     &none   &trans  &trans      &trans  &trans  &none   &kp BSPC  &kp RET  &kp SPACE  &kp DEL  &kp LA(PSCRN)  &kp LG(PSCRN)
+&none  &kp N0     &kp N1  &kp N2  &kp N3  &kp LS(SEMI)                  &trans      &trans                  &none     &none    &kp COMMA  &kp DOT  &kp FSLH       &none
+&none  &none      &none   &none   &none                 &trans  &trans  &trans      &trans  &trans  &trans            &none    &none      &none    &none          &none
             >;
+
+            label = "Fn_Num_Jis";
         };
 
         function {
@@ -640,7 +631,7 @@
             display-name = "Mod";
             bindings = <
 &none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none           &to 4         &to 0         &to 4         &to 4         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
+&none           &to 0         &to 1         &to 3         &to 4         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &studio_unlock  &bt0          &bt1          &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
