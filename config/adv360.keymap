@@ -608,11 +608,11 @@
         base_reverse {
             display-name = "Base_reverse";
             bindings = <
-&mm_ea     &mm_n1       &mm_n2         &mm_n3         &mm_n4        &mm_n5  &kp PSCRN                                                              &mo 11     &mm_n6  &mm_n7        &mm_n8         &mm_n9       &mm_n0          &kp BSLH
-&kp EQUAL  &kp Q        &kp W          &kp E          &kp R         &kp T   &kp INS                                                                &kp DEL    &kp Y   &kp U         &kp I          &kp O        &kp P           &kp MINUS
-&kp GRAVE  &hml LALT A  &hml LGUI S    &hml LSHIFT D  &hml LCTRL F  &kp G   &none      &kp LCTRL  &kp LALT       &kp TAB                &kp ESC    &none      &kp H   &hmr LCTRL J  &hmr LSHIFT K  &hmr LGUI L  &hmr LALT SEMI  &kp SQT
-&sk LSHFT  &kp Z        &kp X          &kp C          &kp V         &kp B                         &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &kp N   &kp M         &kp COMMA      &kp DOT      &kp FSLH        &sk RSHFT
-&mo 10     &kp PG_UP    &kp PAGE_DOWN  &kp LEFT       &kp RIGHT             &kp BSPC   &mo 8      &kp LANG2      &kp LANG1              &kp ENTER  &kp SPACE          &kp DOWN      &kp UP         &kp PRCNT    &kp AMPS        &mo 10
+&mm_ea     &mm_n1     &mm_n2         &mm_n3       &mm_n4        &mm_n5  &kp PSCRN                                                              &mo 11     &mm_n6  &mm_n7        &mm_n8       &mm_n9       &mm_n0    &kp BSLH
+&kp EQUAL  &kp Q      &kp W          &kp E        &kp R         &kp T   &kp INS                                                                &kp DEL    &kp Y   &kp U         &kp I        &kp O        &kp P     &kp MINUS
+&kp GRAVE  &kp A      &hml LALT S    &hml LGUI D  &hml LCTRL F  &kp G   &none      &kp LCTRL  &kp LALT       &kp TAB                &kp ESC    &none      &kp H   &hmr LCTRL J  &hmr LGUI K  &hmr LALT L  &kp SEMI  &kp SQT
+&sk LSHFT  &kp Z      &kp X          &kp C        &kp V         &kp B                         &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &kp N   &kp M         &kp COMMA    &kp DOT      &kp FSLH  &sk RSHFT
+&mo 10     &kp PG_UP  &kp PAGE_DOWN  &kp LEFT     &kp RIGHT             &kp BSPC   &mo 8      &kp LANG2      &kp LANG1              &kp ENTER  &kp SPACE          &kp DOWN      &kp UP       &kp PRCNT    &kp AMPS  &mo 10
             >;
         };
 
@@ -630,11 +630,11 @@
         jis_reverse {
             display-name = "Jisa_reverse";
             bindings = <
-&mj_ea     &mj_n1       &mj_n2         &mj_n3        &mj_n4        &mj_n5  &kp PSCRN                                                              &mo 11     &mj_n6  &mj_n7        &mj_n8        &mj_n9           &mj_n0          &mj_bp
-&mj_ep     &kp Q        &kp W          &kp E         &kp R         &kp T   &kp INS                                                                &kp DEL    &kp Y   &kp U         &kp I         &kp O            &kp P           &mj_mu
-&mj_gt     &hml LALT A  &hml LGUI S    &hml LSHFT D  &hml LCTRL G  &kp G   &none      &kp LCTRL  &kp LALT       &kp TAB                &kp ESC    &none      &kp H   &hmr LCTRL J  &hmr LSHFT K  &hmr LEFT_GUI L  &hmr_sc LALT 0  &mj_qd
-&sk LSHFT  &kp Z        &kp X          &kp C         &kp V         &kp B                         &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &kp N   &kp M         &kp COMMA     &kp DOT          &kp FSLH        &sk RSHFT
-&mo 10     &kp PG_UP    &kp PAGE_DOWN  &kp LEFT      &kp RIGHT             &kp BSPC   &mo 9      &kp LANG2      &kp LANG1              &kp ENTER  &kp SPACE          &kp DOWN      &kp UP        &kp PRCNT        &kp CARET       &mo 10
+&mj_ea     &mj_n1     &mj_n2         &mj_n3       &mj_n4        &mj_n5  &kp PSCRN                                                              &mo 11     &mj_n6  &mj_n7        &mj_n8       &mj_n9       &mj_n0     &mj_bp
+&mj_ep     &kp Q      &kp W          &kp E        &kp R         &kp T   &kp INS                                                                &kp DEL    &kp Y   &kp U         &kp I        &kp O        &kp P      &mj_mu
+&mj_gt     &kp A      &hml LALT S    &hml LGUI D  &hml LCTRL G  &kp G   &none      &kp LCTRL  &kp LALT       &kp TAB                &kp ESC    &none      &kp H   &hmr LCTRL J  &hmr LGUI K  &hmr LALT L  &mj_sc     &mj_qd
+&sk LSHFT  &kp Z      &kp X          &kp C        &kp V         &kp B                         &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &kp N   &kp M         &kp COMMA    &kp DOT      &kp FSLH   &sk RSHFT
+&mo 10     &kp PG_UP  &kp PAGE_DOWN  &kp LEFT     &kp RIGHT             &kp BSPC   &mo 9      &kp LANG2      &kp LANG1              &kp ENTER  &kp SPACE          &kp DOWN      &kp UP       &kp PRCNT    &kp CARET  &mo 10
             >;
         };
 
