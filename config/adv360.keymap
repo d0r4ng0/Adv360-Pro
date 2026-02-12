@@ -721,22 +721,22 @@
         fn_num3 {
             label = "Fn_Num3";
             bindings = <
-&trans  &kp F1    &kp F2     &kp F3     &kp F4     &kp F5     &trans                                      &trans  &kp F6    &kp F7    &kp F8  &kp F9     &kp F10        &kp F11
-&trans  &kp EXCL  &kp AT     &kp BSLH   &kp TILDE  &kp GRAVE  &trans                                      &trans  &trans    &trans    &trans  &trans     &kp PSCRN      &kp F12
-&trans  &kp PLUS  &kp EQUAL  &kp UNDER  &kp PRCNT  &kp AMPS   &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LA(PSCRN)  &kp F13
-&trans  &kp LT    &kp PIPE   &kp MINUS  &kp GT     &code                      &trans      &trans                  &trans    &trans    &kp LT  &kp GT     &kp LG(PSCRN)  &kp F14
-&trans  &trans    &trans     &trans     &trans                &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans         &kp F15
+&trans    &kp F1    &kp F2     &kp F3     &kp F4    &kp F5     &trans                                      &trans  &kp F6    &kp F7    &kp F8  &kp F9     &kp F10        &kp F11
+&code     &kp EXCL  &kp AT     &kp PRCNT  &kp AMPS  &kp QMARK  &trans                                      &trans  &trans    &trans    &trans  &trans     &kp PSCRN      &kp F12
+&kp HASH  &kp LT    &kp EQUAL  &kp UNDER  &kp GT    &kp STAR   &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LA(PSCRN)  &kp F13
+&trans    &kp PLUS  &kp PIPE   &kp MINUS  &kp BSLH  &kp FSLH                   &trans      &trans                  &trans    &trans    &kp LT  &kp GT     &kp LG(PSCRN)  &kp F14
+&trans    &trans    &trans     &trans     &trans               &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans         &kp F15
             >;
         };
 
         fn_num3_jis {
             label = "Fn_Num3_Jis";
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4     &kp F5     &trans                                      &trans  &kp F6    &kp F7    &kp F8  &kp F9     &kp F10        &kp F11
-&trans  &kp EXCL      &kp LBKT      &kp INT3      &kp PLUS   &kp LBRC   &trans                                      &trans  &trans    &trans    &trans  &trans     &kp PSCRN      &kp F12
-&trans  &kp LS(SEMI)  &kp UNDER     &kp LS(INT1)  &kp PRCNT  &kp CARET  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LA(PSCRN)  &kp F13
-&trans  &kp LT        &kp LS(INT3)  &kp MINUS     &kp GT     &code_jis                  &trans      &trans                  &trans    &trans    &kp LT  &kp GT     &kp LG(PSCRN)  &kp F14
-&trans  &trans        &trans        &trans        &trans                &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans         &kp F15
+&trans     &kp F1        &kp F2        &kp F3        &kp F4     &kp F5     &trans                                      &trans  &kp F6    &kp F7    &kp F8  &kp F9     &kp F10        &kp F11
+&code_jis  &kp EXCL      &kp LBKT      &kp PRCNT     &kp CARET  &kp QMARK  &trans                                      &trans  &trans    &trans    &trans  &trans     &kp PSCRN      &kp F12
+&kp HASH   &kp LT        &kp UNDER     &kp LS(INT1)  &kp GT     &kp DQT    &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp LA(PSCRN)  &kp F13
+&trans     &kp LS(SEMI)  &kp LS(INT3)  &kp MINUS     &kp INT3   &kp FSLH                   &trans      &trans                  &trans    &trans    &kp LT  &kp GT     &kp LG(PSCRN)  &kp F14
+&trans     &trans        &trans        &trans        &trans                &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans         &kp F15
             >;
         };
 
