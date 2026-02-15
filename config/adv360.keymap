@@ -584,6 +584,20 @@
             bindings = <&kp LBRC &kp LBRC &kp LBRC>;
             label = "CODE_JIS";
         };
+
+        double_colon: double_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp COLON>;
+            label = "DOUBLE_COLON";
+        };
+
+        double_colon_jis: double_colon_jis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp SQT>;
+            label = "DOUBLE_COLON_JIS";
+        };
     };
 
     combos {
@@ -767,11 +781,11 @@
 
         sysbols3 {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6  &kp F7    &kp F8    &kp F9         &kp F10  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp LBRC  &kp RBRC  &kp LA(PSCRN)  &trans   &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LPAR  &kp RPAR  &kp PSCRN      &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp LBKT  &kp RBKT  &kp LG(PSCRN)  &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans    &trans    &trans         &trans   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6     &kp F7    &kp F8    &kp F9         &kp F10        &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp HASH   &kp LBRC  &kp RBRC  &kp STAR       &kp LA(PSCRN)  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR       &kp PSCRN      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &code      &kp LBKT  &kp RBKT  &double_colon  &kp LG(PSCRN)  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans    &trans    &trans         &trans         &trans
             >;
 
             label = "Symbols3";
@@ -779,11 +793,11 @@
 
         sysbols3_jis {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6  &kp F7    &kp F8    &kp F9         &kp F10  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp RBRC  &kp PIPE  &kp LA(PSCRN)  &trans   &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp STAR  &kp LPAR  &kp PSCRN      &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp RBKT  &kp BSLH  &kp LG(PSCRN)  &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans    &trans    &trans         &trans   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6     &kp F7    &kp F8    &kp F9             &kp F10        &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp HASH   &kp RBRC  &kp PIPE  &kp DQT            &kp LA(PSCRN)  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp EQUAL  &kp STAR  &kp LPAR  &kp DLLR           &kp PSCRN      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &code_jis  &kp RBKT  &kp BSLH  &double_colon_jis  &kp LG(PSCRN)  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans    &trans    &trans             &trans         &trans
             >;
 
             label = "Symbols3_Jis";
