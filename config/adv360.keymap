@@ -585,28 +585,65 @@
             label = "CODE_JIS";
         };
 
-        double_colon: double_colon {
+        d_colon: double_colon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp COLON &kp COLON>;
             label = "DOUBLE_COLON";
         };
 
-        double_colon_jis: double_colon_jis {
+        d_colon_jis: double_colon_jis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp SQT>;
             label = "DOUBLE_COLON_JIS";
         };
+
+        pren: pren {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR>;
+            label = "PREN";
+        };
+
+        pren_jis: pren_jis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp STAR &kp LPAR>;
+            label = "PREN_JIS";
+        };
+
+        brc: brc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC &kp RBRC>;
+            label = "BRC";
+        };
+
+        brc_jis: brc_jis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC &kp PIPE>;
+            label = "BRC_JIS";
+        };
+
+        bkt: bkt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RBKT>;
+            label = "BKT";
+        };
+
+        bkt_jis: bkt_jis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT &kp BSLH>;
+            label = "BKT_JIS";
+        };
     };
 
     combos {
         compatible = "zmk,combos";
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <41 42>;
-        };
 
         tab {
             bindings = <&kp TAB>;
@@ -617,10 +654,21 @@
     keymap {
         compatible = "zmk,keymap";
 
+        base_reverse {
+            display-name = "Base_reverse";
+            bindings = <
+&mm_ea        &mm_n1             &mm_n2         &mm_n3       &mm_n4        &mm_n5        &kp PSCRN                                                                  &mo 19     &mm_n6         &mm_n7        &mm_n8          &mm_n9          &mm_n0                &kp GRAVE
+&kp TAB       &kp Q              &kp W          &kp E        &kp R         &kp T         &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I           &kp O           &kp P                 &kp BSLH
+&kp EQUAL     &kp A              &kp S          &kp D        &kp F         &kp G         &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K           &kp L           &kp SEMI              &kp MINUS
+&sl 16        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr_cc LALT 0  &hmr_dd LGUI 0  &hmr LC(LSHIFT) FSLH  &kp SQT
+&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                   &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP          &mkp LCLK       &mkp RCLK             &kp LC(LALT)
+            >;
+        };
+
         default_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE     &kp N1             &kp N2       &kp N3       &kp N4        &kp N5         &kp PSCRN                                                                  &mo 17     &kp N6         &kp N7        &kp N8           &kp N9         &kp N0                &kp DEL
+&kp GRAVE     &kp N1             &kp N2       &kp N3       &kp N4        &kp N5         &kp PSCRN                                                                  &mo 19     &kp N6         &kp N7        &kp N8           &kp N9         &kp N0                &kp DEL
 &kp TAB       &kp Q              &kp W        &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I            &kp O          &kp P                 &kp BSLH
 &kp EQUAL     &kp A              &kp S        &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &kp SEMI              &kp MINUS
 &sl 14        &hml LC(LSHIFT) Z  &hml LGUI X  &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &kp SQT
@@ -628,36 +676,25 @@
             >;
         };
 
-        base_reverse {
-            display-name = "Base_reverse";
+        jis_reverse {
+            display-name = "Jisa_reverse";
             bindings = <
-&mm_ea        &mm_n1             &mm_n2         &mm_n3       &mm_n4        &mm_n5        &kp PSCRN                                                                  &mo 17     &mm_n6         &mm_n7        &mm_n8          &mm_n9          &mm_n0                &kp DEL
-&kp TAB       &kp Q              &kp W          &kp E        &kp R         &kp T         &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I           &kp O           &kp P                 &kp BSLH
-&kp EQUAL     &kp A              &kp S          &kp D        &kp F         &kp G         &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K           &kp L           &kp SEMI              &kp MINUS
-&kp GRAVE     &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr_cc LALT 0  &hmr_dd LGUI 0  &hmr LC(LSHIFT) FSLH  &kp SQT
-&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                   &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP          &mkp LCLK       &mkp RCLK             &kp LC(LALT)
+&mj_ea        &mj_n1             &mj_n2         &mj_n3       &mj_n4        &mj_n5         &kp PSCRN                                                                  &mo 19     &mj_n6         &mj_n7        &mj_n8          &mj_n9          &mj_n0                &mj_gt
+&kp TAB       &kp Q              &kp W          &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I           &kp O           &kp P                 &mj_bp
+&mj_ep        &kp A              &kp S          &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K           &kp L           &mj_sc                &mj_mu
+&sl 17        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr_cc LALT 0  &hmr_dd LGUI 0  &hmr LC(LSHIFT) FSLH  &mj_qd
+&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP          &mkp LCLK       &mkp RCLK             &kp LC(LALT)
             >;
         };
 
         jis {
             display-name = "Jis";
             bindings = <
-&mj_gt        &kp N1             &aj_n2       &kp N3       &kp N4        &kp N5         &kp PSCRN                                                                  &mo 17     &aj_n6         &aj_n7        &aj_n8           &aj_n9         &aj_n0                &kp DEL
+&mj_gt        &kp N1             &aj_n2       &kp N3       &kp N4        &kp N5         &kp PSCRN                                                                  &mo 19     &aj_n6         &aj_n7        &aj_n8           &aj_n9         &aj_n0                &kp DEL
 &kp TAB       &kp Q              &kp W        &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I            &kp O          &kp P                 &mj_bp
 &mj_ep        &kp A              &kp S        &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &mj_sc                &mj_mu
 &sl 15        &hml LC(LSHIFT) Z  &hml LGUI X  &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &mj_qd
 &kp LC(LALT)  &kp PG_UP          &kp PG_DN    &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP           &kp RBKT       &kp NON_US_BSLH       &kp LC(LALT)
-            >;
-        };
-
-        jis_reverse {
-            display-name = "Jisa_reverse";
-            bindings = <
-&mj_ea        &mj_n1             &mj_n2         &mj_n3       &mj_n4        &mj_n5         &kp PSCRN                                                                  &mo 17     &mj_n6         &mj_n7        &mj_n8          &mj_n9          &mj_n0                &kp DEL
-&kp TAB       &kp Q              &kp W          &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I           &kp O           &kp P                 &mj_bp
-&mj_ep        &kp A              &kp S          &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K           &kp L           &mj_sc                &mj_mu
-&mj_gt        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr_cc LALT 0  &hmr_dd LGUI 0  &hmr LC(LSHIFT) FSLH  &mj_qd
-&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP          &mkp LCLK       &mkp RCLK             &kp LC(LALT)
             >;
         };
 
@@ -781,11 +818,11 @@
 
         sysbols3 {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6     &kp F7    &kp F8    &kp F9         &kp F10        &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp HASH   &kp LBRC  &kp RBRC  &kp STAR       &kp LA(PSCRN)  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR       &kp PSCRN      &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &code      &kp LBKT  &kp RBKT  &double_colon  &kp LG(PSCRN)  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans    &trans    &trans         &trans         &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6     &kp F7    &kp F8    &kp F9    &kp F10        &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp HASH   &kp LBRC  &kp RBRC  &kp STAR  &kp LA(PSCRN)  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET  &kp LPAR  &kp RPAR  &kp DLLR  &kp PSCRN      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &code      &kp LBKT  &kp RBKT  &d_colon  &kp LG(PSCRN)  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans    &trans    &trans    &trans         &trans
             >;
 
             label = "Symbols3";
@@ -793,14 +830,38 @@
 
         sysbols3_jis {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6     &kp F7    &kp F8    &kp F9             &kp F10        &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp HASH   &kp RBRC  &kp PIPE  &kp DQT            &kp LA(PSCRN)  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp EQUAL  &kp STAR  &kp LPAR  &kp DLLR           &kp PSCRN      &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &code_jis  &kp RBKT  &kp BSLH  &double_colon_jis  &kp LG(PSCRN)  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans    &trans    &trans             &trans         &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6     &kp F7    &kp F8    &kp F9        &kp F10        &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp HASH   &kp RBRC  &kp PIPE  &kp DQT       &kp LA(PSCRN)  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp EQUAL  &kp STAR  &kp LPAR  &kp DLLR      &kp PSCRN      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &code_jis  &kp RBKT  &kp BSLH  &d_colon_jis  &kp LG(PSCRN)  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans    &trans    &trans        &trans         &trans
             >;
 
             label = "Symbols3_Jis";
+        };
+
+        symbols4 {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6     &kp F7     &kp F8     &kp F9    &kp F10        &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp EXCL   &kp AT     &kp PRCNT  &kp AMPS  &kp LA(PSCRN)  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &d_colon   &pren      &brc       &bkt      &kp PSCRN      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp GRAVE  &kp TILDE  &kp LT     &kp GT    &kp LG(PSCRN)  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans     &trans    &trans         &trans
+            >;
+
+            label = "Symbols4";
+        };
+
+        symbols4_jis {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6        &kp F7     &kp F8     &kp F9     &kp F10        &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp EXCL      &kp LBKT   &kp PRCNT  &kp CARET  &kp LA(PSCRN)  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &d_colon_jis  &pren_jis  &brc_jis   &bkt_jis   &kp PSCRN      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp LBRC      &kp PLUS   &kp LT     &kp GT     &kp LG(PSCRN)  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                &trans     &trans     &trans     &trans         &trans
+            >;
+
+            label = "Symbols4_jis";
         };
 
         function {
@@ -819,7 +880,7 @@
             display-name = "Mod";
             bindings = <
 &none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none           &to 1         &to 0         &to 2         &to 4         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
+&none           &to 0         &to 1         &to 2         &to 3         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &studio_unlock  &bt0          &bt1          &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
