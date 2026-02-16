@@ -657,11 +657,11 @@
         base_reverse {
             display-name = "Base_reverse";
             bindings = <
-&mm_ea        &mm_n1             &mm_n2         &mm_n3       &mm_n4        &mm_n5        &kp PSCRN                                                                  &mo 19     &mm_n6         &mm_n7        &mm_n8          &mm_n9          &mm_n0                &kp GRAVE
-&kp TAB       &kp Q              &kp W          &kp E        &kp R         &kp T         &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I           &kp O           &kp P                 &kp BSLH
-&kp EQUAL     &kp A              &kp S          &kp D        &kp F         &kp G         &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K           &kp L           &kp SEMI              &kp MINUS
-&sl 16        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr_cc LALT 0  &hmr_dd LGUI 0  &hmr LC(LSHIFT) FSLH  &kp SQT
-&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                   &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP          &mkp LCLK       &mkp RCLK             &kp LC(LALT)
+&kp DOT       &mm_n1             &mm_n2         &mm_n3       &mm_n4        &mm_n5        &kp PSCRN                                                                  &mo 19     &mm_n6         &mm_n7        &mm_n8           &mm_n9         &mm_n0                &kp COMMA
+&kp TAB       &kp Q              &kp W          &kp E        &kp R         &kp T         &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I            &kp O          &kp P                 &kp BSLH
+&kp EQUAL     &kp A              &kp S          &kp D        &kp F         &kp G         &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &kp SEMI              &kp MINUS
+&sl 16        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &kp SQT
+&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                   &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP           &mkp LCLK      &mkp RCLK             &kp LC(LALT)
             >;
         };
 
@@ -679,11 +679,11 @@
         jis_reverse {
             display-name = "Jisa_reverse";
             bindings = <
-&mj_ea        &mj_n1             &mj_n2         &mj_n3       &mj_n4        &mj_n5         &kp PSCRN                                                                  &mo 19     &mj_n6         &mj_n7        &mj_n8          &mj_n9          &mj_n0                &mj_gt
-&kp TAB       &kp Q              &kp W          &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I           &kp O           &kp P                 &mj_bp
-&mj_ep        &kp A              &kp S          &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K           &kp L           &mj_sc                &mj_mu
-&sl 17        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr_cc LALT 0  &hmr_dd LGUI 0  &hmr LC(LSHIFT) FSLH  &mj_qd
-&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP          &mkp LCLK       &mkp RCLK             &kp LC(LALT)
+&kp DOT       &mj_n1             &mj_n2         &mj_n3       &mj_n4        &mj_n5         &kp PSCRN                                                                  &mo 19     &mj_n6         &mj_n7        &mj_n8           &mj_n9         &mj_n0                &kp COMMA
+&kp TAB       &kp Q              &kp W          &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I            &kp O          &kp P                 &mj_bp
+&mj_ep        &kp A              &kp S          &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &mj_sc                &mj_mu
+&sl 17        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &mj_qd
+&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP           &mkp LCLK      &mkp RCLK             &kp LC(LALT)
             >;
         };
 
@@ -842,11 +842,11 @@
 
         symbols4 {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6     &kp F7     &kp F8     &kp F9    &kp F10        &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp EXCL   &kp AT     &kp PRCNT  &kp AMPS  &kp LA(PSCRN)  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &d_colon   &pren      &brc       &bkt      &kp PSCRN      &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp GRAVE  &kp TILDE  &kp LT     &kp GT    &kp LG(PSCRN)  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans     &trans    &trans         &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6     &kp F7     &kp F8  &kp F9    &kp F10   &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp PRCNT  &kp EXCL   &kp AT  &kp AMPS  &trans    &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &code      &pren      &brc    &bkt      &d_colon  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp TILDE  &kp GRAVE  &kp LT  &kp GT    &trans    &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans  &trans    &trans    &trans
             >;
 
             label = "Symbols4";
@@ -854,11 +854,11 @@
 
         symbols4_jis {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6        &kp F7     &kp F8     &kp F9     &kp F10        &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp EXCL      &kp LBKT   &kp PRCNT  &kp CARET  &kp LA(PSCRN)  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &d_colon_jis  &pren_jis  &brc_jis   &bkt_jis   &kp PSCRN      &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp LBRC      &kp PLUS   &kp LT     &kp GT     &kp LG(PSCRN)  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                &trans     &trans     &trans     &trans         &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans  &kp F6     &kp F7     &kp F8    &kp F9     &kp F10       &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp PRCNT  &kp EXCL   &kp LBKT  &kp CARET  &trans        &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &code_jis  &pren_jis  &brc_jis  &bkt_jis   &d_colon_jis  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp PLUS   &kp LBRC   &kp LT    &kp GT     &trans        &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans    &trans     &trans        &trans
             >;
 
             label = "Symbols4_jis";
@@ -868,9 +868,9 @@
             bindings = <
 &none   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none                                  &none  &kp F6  &kp F7    &kp F8    &kp F9     &kp F10        &kp F11
 &none   &none   &none   &none   &none   &none   &none                                  &none  &none   &none     &kp UP    &none      &kp PSCRN      &kp F12
-&none   &none   &none   &none   &none   &none   &none  &none  &none      &none  &none  &none  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp LA(PSCRN)  &kp F14
-&none   &none   &none   &none   &none   &none                 &none      &none                &none   &none     &kp LT    &kp GT     &kp LG(PSCRN)  &kp F15
-&trans  &none   &none   &none   &none           &none  &none  &none      &none  &none  &none          &none     &none     &none      &none          &trans
+&none   &none   &none   &none   &none   &none   &none  &none  &none      &none  &none  &none  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp LA(PSCRN)  &none
+&none   &none   &none   &none   &none   &none                 &none      &none                &none   &none     &kp LT    &kp GT     &kp LG(PSCRN)  &none
+&trans  &none   &none   &none   &none           &none  &none  &none      &none  &none  &none          &none     &none     &none      &none          &none
             >;
 
             label = "Function";
