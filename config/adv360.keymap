@@ -538,6 +538,24 @@
             #binding-cells = <0>;
             bindings = <&sk LSHIFT>, <&caps_word>;
         };
+
+        ins_com: ins_com {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INS_COM";
+            bindings = <&kp INS>, <&kp COMMA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        del_dot: del_dot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DEL_DOT";
+            bindings = <&kp DEL>, <&kp DOT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -657,7 +675,7 @@
         base_reverse {
             display-name = "Base_reverse";
             bindings = <
-&kp COMMA     &mm_n1             &mm_n2         &mm_n3       &mm_n4        &mm_n5        &kp PSCRN                                                                  &mo 19     &mm_n6         &mm_n7        &mm_n8           &mm_n9         &mm_n0                &kp DOT
+&ins_com      &mm_n1             &mm_n2         &mm_n3       &mm_n4        &mm_n5        &kp PSCRN                                                                  &mo 19     &mm_n6         &mm_n7        &mm_n8           &mm_n9         &mm_n0                &del_dot
 &kp TAB       &kp Q              &kp W          &kp E        &kp R         &kp T         &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I            &kp O          &kp P                 &kp BSLH
 &kp EQUAL     &kp A              &kp S          &kp D        &kp F         &kp G         &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &kp SEMI              &kp MINUS
 &sl 16        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &kp SQT
@@ -679,7 +697,7 @@
         jis_reverse {
             display-name = "Jisa_reverse";
             bindings = <
-&kp COMMA     &mj_n1             &mj_n2         &mj_n3       &mj_n4        &mj_n5         &kp PSCRN                                                                  &mo 19     &mj_n6         &mj_n7        &mj_n8           &mj_n9         &mj_n0                &kp DOT
+&ins_com      &mj_n1             &mj_n2         &mj_n3       &mj_n4        &mj_n5         &kp PSCRN                                                                  &mo 19     &mj_n6         &mj_n7        &mj_n8           &mj_n9         &mj_n0                &del_dot
 &kp TAB       &kp Q              &kp W          &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I            &kp O          &kp P                 &mj_bp
 &mj_ep        &kp A              &kp S          &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &mj_sc                &mj_mu
 &sl 17        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &mj_qd
