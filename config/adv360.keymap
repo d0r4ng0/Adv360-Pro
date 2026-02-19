@@ -667,6 +667,16 @@
             bindings = <&kp TAB>;
             key-positions = <32 31>;
         };
+
+        ime_on {
+            bindings = <&kp LANG1>;
+            key-positions = <23 24>;
+        };
+
+        ime_off {
+            bindings = <&kp LANG2>;
+            key-positions = <18 17>;
+        };
     };
 
     keymap {
@@ -676,43 +686,43 @@
             display-name = "Base_reverse";
             bindings = <
 &mm_ea        &mm_n1             &mm_n2         &mm_n3       &mm_n4        &mm_n5        &kp PSCRN                                                                  &mo 19     &mm_n6         &mm_n7        &mm_n8          &mm_n9          &mm_n0                &kp BSLH
-&kp EQUAL     &kp Q              &kp W          &kp E        &kp R         &kp T         &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I           &kp O           &kp P                 &kp MINUS
-&kp TAB       &kp A              &kp S          &kp D        &kp F         &kp G         &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K           &kp L           &kp SEMI              &kp SQT
-&mm_lp        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr_cc LALT 0  &hmr_dd LGUI 0  &hmr LC(LSHIFT) FSLH  &mm_ga
-&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                   &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP          &mkp LCLK       &mkp RCLK             &kp LC(LALT)
+&mm_lp        &kp Q              &kp W          &kp E        &kp R         &kp T         &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I           &kp O           &kp P                 &mm_ga
+&kp GRAVE     &kp A              &kp S          &kp D        &kp F         &kp G         &none      &kp LCTRL      &kp LALT       &kp TAB                &kp ESC    &none      &kp H          &kp J         &kp K           &kp L           &kp SEMI              &kp SQT
+&kp EQUAL     &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr_cc LALT 0  &hmr_dd LGUI 0  &hmr LC(LSHIFT) FSLH  &kp MINUS
+&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                   &kp BSPC   &custom_shift  &kp LANG2      &kp LANG1              &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP          &mkp LCLK       &mkp RCLK             &kp LC(LALT)
             >;
         };
 
         default_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE     &kp N1             &kp N2       &kp N3       &kp N4        &kp N5         &kp PSCRN                                                                  &mo 19     &kp N6         &kp N7        &kp N8           &kp N9         &kp N0                &kp DEL
+&kp DEL       &kp N1             &kp N2       &kp N3       &kp N4        &kp N5         &kp PSCRN                                                                  &mo 19     &kp N6         &kp N7        &kp N8           &kp N9         &kp N0                &kp BSLH
 &kp EQUAL     &kp Q              &kp W        &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I            &kp O          &kp P                 &kp MINUS
-&kp TAB       &kp A              &kp S        &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &kp SEMI              &kp SQT
-&sl 14        &hml LC(LSHIFT) Z  &hml LGUI X  &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &kp BSLH
-&kp LC(LALT)  &kp PG_UP          &kp PG_DN    &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP           &mkp LCLK      &mkp RCLK             &kp LC(LALT)
+&kp GRAVE     &kp A              &kp S        &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LALT       &kp TAB                &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &kp SEMI              &kp SQT
+&sk LSHIFT    &hml LC(LSHIFT) Z  &hml LGUI X  &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &sk LSHIFT
+&kp LC(LALT)  &kp PG_UP          &kp PG_DN    &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LANG2      &kp LANG1              &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP           &mkp LCLK      &mkp RCLK             &kp LC(LALT)
             >;
         };
 
         jis_reverse {
             display-name = "Jisa_reverse";
             bindings = <
-&mj_ea        &mj_n1             &mj_n2         &mj_n3       &mj_n4        &mj_n5         &kp PSCRN                                                                  &mo 19     &mj_n6         &mj_n7        &mj_n8           &mj_n9         &mj_n0                &mj_bp
-&mj_ep        &kp Q              &kp W          &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I            &kp O          &kp P                 &mj_mu
-&mj_ep        &kp A              &kp S          &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &mj_sc                &mj_qd
-&mm_lp        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &mj_ga
-&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP           &mkp LCLK      &mkp RCLK             &kp LC(LALT)
+&mj_ea        &mj_n1             &mj_n2         &mj_n3       &mj_n4        &mj_n5         &kp PSCRN                                                                  &mo 19     &mj_n6         &mj_n7        &mj_n8          &mj_n9          &mj_n0                &mj_bp
+&mm_lp        &kp Q              &kp W          &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I           &kp O           &kp P                 &mj_ga
+&mj_ep        &kp A              &kp S          &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LALT       &kp TAB                &kp ESC    &none      &kp H          &kp J         &kp K           &kp L           &mj_sc                &mj_qd
+&mj_ep        &hml LC(LSHIFT) Z  &hml LGUI X    &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr_cc LALT 0  &hmr_dd LGUI 0  &hmr LC(LSHIFT) FSLH  &mj_mu
+&kp LC(LALT)  &kp PG_UP          &kp PAGE_DOWN  &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LANG2      &kp LANG1              &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP          &mkp LCLK       &mkp RCLK             &kp LC(LALT)
             >;
         };
 
         jis {
             display-name = "Jis";
             bindings = <
-&mj_gt        &kp N1             &aj_n2       &kp N3       &kp N4        &kp N5         &kp PSCRN                                                                  &mo 19     &aj_n6         &aj_n7        &aj_n8           &aj_n9         &aj_n0                &kp DEL
+&kp DEL       &kp N1             &aj_n2       &kp N3       &kp N4        &kp N5         &kp PSCRN                                                                  &mo 19     &aj_n6         &aj_n7        &aj_n8           &aj_n9         &aj_n0                &mj_bp
 &mj_ep        &kp Q              &kp W        &kp E        &kp R         &kp T          &kp INS                                                                    &kp DEL    &kp Y          &kp U         &kp I            &kp O          &kp P                 &mj_mu
-&kp TAB       &kp A              &kp S        &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LANG2      &kp LANG1              &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &mj_sc                &mj_qd
-&sl 15        &hml LC(LSHIFT) Z  &hml LGUI X  &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &mj_bp
-&kp LC(LALT)  &kp PG_UP          &kp PG_DN    &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LALT       &kp CLCK               &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP           &kp RBKT       &kp NON_US_BSLH       &kp LC(LALT)
+&mj_gt        &kp A              &kp S        &kp D        &kp F         &kp G          &none      &kp LCTRL      &kp LALT       &kp TAB                &kp ESC    &none      &kp H          &kp J         &kp K            &kp L          &mj_sc                &mj_qd
+&sk LSHIFT    &hml LC(LSHIFT) Z  &hml LGUI X  &hml LALT C  &hml LCTRL V  &hml LSHIFT B                            &kp LGUI       &kp LS(LA(LG(LCTRL)))                        &hmr LSHIFT N  &hmr LCTRL M  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) FSLH  &sk LSHIFT
+&kp LC(LALT)  &kp PG_UP          &kp PG_DN    &kp LEFT     &kp RIGHT                    &kp BSPC   &custom_shift  &kp LANG2      &kp LANG1              &kp ENTER  &kp SPACE                 &kp DOWN      &kp UP           &kp RBKT       &kp NON_US_BSLH       &kp LC(LALT)
             >;
         };
 
