@@ -776,11 +776,11 @@
 
         fn_num2 {
             bindings = <
-&trans  &kp F1    &kp F2    &kp F3     &kp F4    &kp F5    &trans                                      &trans  &kp F6     &kp F7    &kp F8     &kp F9    &kp F10    &kp F11
-&trans  &kp N1    &kp N2    &kp N3     &kp N4    &kp N5    &trans                                      &trans  &kp N6     &kp N7    &kp N8     &kp N9    &kp N0     &kp PSCRN
-&trans  &kp HASH  &kp LBKT  &kp LBRC   &kp LPAR  &kp STAR  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET  &kp RPAR  &kp RBRC   &kp RBKT  &kp DLLR   &kp LA(PSCRN)
-&trans  &kp EXCL  &kp AT    &kp PRCNT  &kp AMPS  &kp FSLH                  &trans      &trans                  &kp BSLH   &kp PIPE  &kp COMMA  &kp DOT   &kp QMARK  &kp LG(PSCRN)
-&trans  &trans    &trans    &trans     &trans              &trans  &trans  &trans      &trans  &trans  &trans             &trans    &trans     &trans    &trans     &trans
+&trans     &kp F1    &kp F2    &kp F3     &kp F4    &kp F5    &trans                                      &trans  &kp F6     &kp F7    &kp F8    &kp F9    &kp F10    &kp F11
+&kp PLUS   &kp N1    &kp N2    &kp N3     &kp N4    &kp N5    &trans                                      &trans  &kp N6     &kp N7    &kp N8    &kp N9    &kp N0     &kp UNDER
+&kp TILDE  &kp HASH  &kp LBKT  &kp LBRC   &kp LPAR  &kp STAR  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET  &kp RPAR  &kp RBRC  &kp RBKT  &kp DLLR   &kp DQT
+&kp COMMA  &kp EXCL  &kp AT    &kp PRCNT  &kp AMPS  &kp FSLH                  &trans      &trans                  &kp BSLH   &kp PIPE  &kp LT    &kp GT    &kp QMARK  &kp DOT
+&trans     &trans    &trans    &trans     &trans              &trans  &trans  &trans      &trans  &trans  &trans             &trans    &trans    &trans    &trans     &trans
             >;
 
             label = "Fn_Num2";
@@ -788,11 +788,11 @@
 
         fn_num2_jis {
             bindings = <
-&trans  &kp F1    &kp F2    &kp F3     &kp F4     &kp F5        &trans                                      &trans  &kp F6     &kp F7        &kp F8     &kp F9    &kp F10    &kp F11
-&trans  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5        &trans                                      &trans  &kp N6     &kp N7        &kp N8     &kp N9    &kp N0     &kp PSCRN
-&trans  &kp HASH  &kp RBKT  &kp RBRC   &kp STAR   &kp DQT       &trans  &trans  &trans      &trans  &trans  &trans  &kp EQUAL  &kp LPAR      &kp PIPE   &kp BSLH  &kp DLLR   &kp LA(PSCRN)
-&trans  &kp EXCL  &kp LBKT  &kp PRCNT  &kp CARET  &kp LS(FSLH)                  &trans      &trans                  &kp INT3   &kp LS(INT3)  &kp COMMA  &kp DOT   &kp QMARK  &kp LG(PSCRN)
-&trans  &trans    &trans    &trans     &trans                   &trans  &trans  &trans      &trans  &trans  &trans             &trans        &trans     &trans    &trans     &trans
+&trans        &kp F1    &kp F2    &kp F3     &kp F4     &kp F5    &trans                                      &trans  &kp F6     &kp F7        &kp F8    &kp F9    &kp F10    &kp F11
+&kp LS(SEMI)  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5    &trans                                      &trans  &kp N6     &kp N7        &kp N8    &kp N9    &kp N0     &kp LS(INT1)
+&kp PLUS      &kp HASH  &kp RBKT  &kp RBRC   &kp STAR   &kp DQT   &trans  &trans  &trans      &trans  &trans  &trans  &kp EQUAL  &kp LPAR      &kp PIPE  &kp BSLH  &kp DLLR   &kp AT
+&kp COMMA     &kp EXCL  &kp LBKT  &kp PRCNT  &kp CARET  &kp FSLH                  &trans      &trans                  &kp INT3   &kp LS(INT3)  &kp LT    &kp GT    &kp QMARK  &kp DOT
+&trans        &trans    &trans    &trans     &trans               &trans  &trans  &trans      &trans  &trans  &trans             &trans        &trans    &trans    &trans     &trans
             >;
 
             label = "Fn_Num2_Jis";
