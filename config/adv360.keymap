@@ -536,7 +536,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CUSTOM_SHIFT";
             #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&caps_word>;
+            bindings = <&sk LSHIFT>, <&caps_word>;
         };
 
         ins_com: ins_com {
