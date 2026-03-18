@@ -776,11 +776,11 @@
 
         fn_num2 {
             bindings = <
-&trans     &kp F1                &kp F2        &kp F3           &kp F4           &kp F5             &trans                                           &trans  &kp F6            &kp F7           &kp F8           &kp F9         &kp F10                &kp F11
-&kp PLUS   &kp N1                &kp N2        &kp N3           &kp N4           &kp N5             &trans                                           &trans  &kp N6            &kp N7           &kp N8           &kp N9         &kp N0                 &kp UNDER
-&kp TILDE  &kp HASH              &kp LBKT      &kp LBRC         &kp LPAR         &kp STAR           &trans  &trans  &trans      &kp LS(TAB)  &trans  &trans  &kp BSLH          &kp RPAR         &kp RBRC         &kp RBKT       &kp COLON              &kp DQT
-&kp LT     &hml LC(LSHIFT) EXCL  &hml LGUI AT  &hml LALT PRCNT  &hml LCTRL AMPS  &hml LSHIFT CARET                  &trans      &trans                       &hmr LSHIFT DLLR  &hmr LCTRL PIPE  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) QMARK  &kp GT
-&trans     &trans                &trans        &trans           &trans                              &trans  &trans  &trans      &trans       &trans  &trans                    &trans           &trans           &trans         &trans                 &trans
+&trans     &kp F1                &kp F2          &kp F3           &kp F4          &kp F5     &trans                                           &trans  &kp F6    &kp F7          &kp F8           &kp F9           &kp F10                &kp F11
+&kp PLUS   &kp N1                &kp N2          &kp N3           &kp N4          &kp N5     &trans                                           &trans  &kp N6    &kp N7          &kp N8           &kp N9           &kp N0                 &kp UNDER
+&kp TILDE  &hml LCTRL HASH       &kp LBKT        &kp LBRC         &kp LPAR        &kp STAR   &trans  &trans  &trans      &kp LS(TAB)  &trans  &trans  &kp BSLH  &kp RPAR        &kp RBRC         &kp RBKT         &hmr LCTRL COLON       &kp DQT
+&kp LT     &hml LC(LSHIFT) EXCL  &hml_mod 18 AT  &hml LALT PRCNT  &hml LGUI AMPS  &kp LCTRL                  &trans      &trans                       &kp DLLR  &hmr LGUI PIPE  &hmr LALT COMMA  &hmr_mod 18 DOT  &hmr LC(LSHIFT) QMARK  &kp GT
+&trans     &trans                &trans          &trans           &trans                     &trans  &trans  &trans      &trans       &trans  &trans            &trans          &trans           &trans           &trans                 &trans
             >;
 
             label = "Fn_Num2";
@@ -788,11 +788,11 @@
 
         fn_num2_jis {
             bindings = <
-&trans        &kp F1                &kp F2          &kp F3           &kp F4            &kp F5             &trans                                           &trans  &kp F6            &kp F7               &kp F8           &kp F9         &kp F10                &kp F11
-&kp LS(SEMI)  &kp N1                &kp N2          &kp N3           &kp N4            &kp N5             &trans                                           &trans  &kp N6            &kp N7               &kp N8           &kp N9         &kp N0                 &kp LS(INT1)
-&kp PLUS      &kp HASH              &kp RBKT        &kp RBRC         &kp STAR          &kp DQT            &trans  &trans  &trans      &kp LS(TAB)  &trans  &trans  &kp INT3          &kp LPAR             &kp PIPE         &kp BSLH       &kp SQT                &kp AT
-&kp LT        &hml LC(LSHIFT) EXCL  &hml LGUI LBKT  &hml LALT PRCNT  &hml LCTRL CARET  &hml LSHIFT EQUAL                  &trans      &trans                       &hmr LSHIFT DLLR  &hmr LCTRL LS(INT3)  &hmr LALT COMMA  &hmr LGUI DOT  &hmr LC(LSHIFT) QMARK  &kp GT
-&trans        &trans                &trans          &trans           &trans                               &trans  &trans  &trans      &trans       &trans  &trans                    &trans               &trans           &trans         &trans                 &trans
+&trans        &kp F1                &kp F2            &kp F3           &kp F4           &kp F5     &trans                                           &trans  &kp F6    &kp F7              &kp F8           &kp F9           &kp F10                &kp F11
+&kp LS(SEMI)  &kp N1                &kp N2            &kp N3           &kp N4           &kp N5     &trans                                           &trans  &kp N6    &kp N7              &kp N8           &kp N9           &kp N0                 &kp LS(INT1)
+&kp PLUS      &hml LCTRL HASH       &kp RBKT          &kp RBRC         &kp STAR         &kp DQT    &trans  &trans  &trans      &kp LS(TAB)  &trans  &trans  &kp INT3  &kp LPAR            &kp PIPE         &kp BSLH         &hmr LCTRL SQT         &kp AT
+&kp LT        &hml LC(LSHIFT) EXCL  &hml_mod 18 LBKT  &hml LALT PRCNT  &hml LGUI CARET  &kp EQUAL                  &trans      &trans                       &kp DLLR  &hmr LGUI LS(INT3)  &hmr LALT COMMA  &hmr_mod 18 DOT  &hmr LC(LSHIFT) QMARK  &kp GT
+&trans        &trans                &trans            &trans           &trans                      &trans  &trans  &trans      &trans       &trans  &trans            &trans              &trans           &trans           &trans                 &trans
             >;
 
             label = "Fn_Num2_Jis";
