@@ -807,7 +807,7 @@
 &trans            &kp F1                &kp F2          &kp F3           &kp F4          &kp F5     &trans                                           &trans  &kp F6    &kp F7          &kp F8           &kp F9           &kp F10                &kp F11
 &kp PLUS          &kp N1                &kp N2          &kp N3           &kp N4          &kp N5     &trans                                           &trans  &kp N6    &kp N7          &kp N8           &kp N9           &kp N0                 &kp UNDER
 &hml LCTRL TILDE  &kp HASH              &kp LBKT        &kp LBRC         &kp LPAR        &kp STAR   &trans  &trans  &trans      &kp LS(TAB)  &trans  &trans  &kp BSLH  &kp RPAR        &kp RBRC         &kp RBKT         &kp COLON              &hmr LCTRL DQT
-&kp LT            &hml LC(LSHIFT) EXCL  &hml_mod 13 AT  &hml LALT PRCNT  &hml LGUI AMPS  &kp LCTRL                  &trans      &trans                       &kp DLLR  &hmr LGUI PIPE  &hmr LALT COMMA  &hmr_mod 13 DOT  &hmr LC(LSHIFT) QMARK  &kp GT
+&kp LT            &hml LC(LSHIFT) EXCL  &hml_mod 13 AT  &hml LALT PRCNT  &hml LGUI AMPS  &kp CARET                  &trans      &trans                       &kp DLLR  &hmr LGUI PIPE  &hmr LALT COMMA  &hmr_mod 13 DOT  &hmr LC(LSHIFT) QMARK  &kp GT
 &trans            &trans                &trans          &trans           &trans                     &trans  &trans  &trans      &trans       &trans  &trans            &trans          &trans           &trans           &trans                 &trans
             >;
 
