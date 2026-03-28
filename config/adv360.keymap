@@ -8,7 +8,7 @@
 
 &sk {
     quick-release;
-    release-after-ms = <200>;
+    release-after-ms = <300>;
 };
 
 / {
